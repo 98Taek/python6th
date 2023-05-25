@@ -1,0 +1,12 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+body {
+    height: 50vh;
+    color: blue;
+    background-color: #000000;
+    background-image: url('background.jpg');
+    background-position: center center;
+}
