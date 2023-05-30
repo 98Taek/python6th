@@ -26,3 +26,12 @@ var person = { firstName: "John", lastName:"Doe", age: 50, eyeColor: "blue"};
 console.log(typeof person, person);
 person = null;
 console.log(typeof person, person);
+
+var name = "이승훈";
+var age = 29;
+var cgpa = 3.92;
+var lineBreak = "<br/>";
+
+document.write("이름: " + name + lineBreak);
+document.write("나이: " + age + lineBreak);
+document.write("학점: " + cgpa + lineBreak);
