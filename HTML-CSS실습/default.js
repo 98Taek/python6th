@@ -112,3 +112,9 @@ document.write("The division is : " + result + lineBreak);
 
 result = num1 % num2;
 document.write("The remainder is : " + result + lineBreak);
+
+var base = parseFloat(prompt("Enter base: "));
+var height = parseFloat(prompt("Enter height: "));
+var area = base * height * 0.5;
+
+document.write("Area of triangle: " + area + "<br/>");
