@@ -213,17 +213,33 @@
 //        document.write('Not a digit');
 //}
 
-var i = 1;
+//var i = 1;
+//
+//do {
+//    document.write('멋쟁이 사자 : ' + i + '<br/>');
+//    i++;
+//} while (i < 1)
+//
+//document.write('<br/>');
+//
+//var j = 1;
+//
+//while (j < 1) {
+//    document.write('멋쟁이 사자 : ' + j++ + '<br/>');
+//}
 
-do {
-    document.write('멋쟁이 사자 : ' + i + '<br/>');
-    i++;
-} while (i < 1)
+for (var i = 1; i <= 100; i++) {
+    if (i == 20) {
+        break;
+    }
+    document.write(i + '<br/>');
+}
 
 document.write('<br/>');
 
-var j = 1;
-
-while (j < 1) {
-    document.write('멋쟁이 사자 : ' + j++ + '<br/>');
+for (var i = 1; i <= 100; i++) {
+    if (i == 20) {
+        continue;
+    }
+    document.write(i + '<br/>');
 }
