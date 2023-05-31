@@ -246,27 +246,41 @@
 
 // 함수
 // 매개변수가 없는 함수 생성하기
-function message() {
-    document.write('Hello, I am a function without parameter' + '<br/>');
+//function message() {
+//    document.write('Hello, I am a function without parameter' + '<br/>');
+//}
+//
+//// 한 개의 매개변수를 갖는 함수 생성하기
+//function welcomeMessage(name) {
+//    document.write('welcome ' + name + '<br/>');
+//}
+//
+//// 여러 개의 매개변수를 갖는 함수 생성하기
+//function addition(num1, num2) {
+//    var sum = num1 + num2;
+//    document.write('addition is ' + sum + '<br/>');
+//}
+//
+//// 값을 반환하는 함수
+//function square(num) {
+//    return num * num;
+//}
+//
+//message();
+//welcomeMessage('임정택');
+//addition(2, 3);
+//document.write('square 5 is : ' + square(5) + '<br/>');
+
+(function display(message) {
+    console.log(message);
+})('hi');
+
+var display2 = function displayMessage(msg) {
+    console.log(msg);
 }
 
-// 한 개의 매개변수를 갖는 함수 생성하기
-function welcomeMessage(name) {
-    document.write('welcome ' + name + '<br/>');
-}
+display2('I am message');
 
-// 여러 개의 매개변수를 갖는 함수 생성하기
-function addition(num1, num2) {
-    var sum = num1 + num2;
-    document.write('addition is ' + sum + '<br/>');
-}
-
-// 값을 반환하는 함수
-function square(num) {
-    return num * num;
-}
-
-message();
-welcomeMessage('임정택');
-addition(2, 3);
-document.write('square 5 is : ' + square(5) + '<br/>');
+(function addNumbers(a, b) {
+    console.log(a + b);
+})(3, 4);
