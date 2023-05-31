@@ -228,18 +228,45 @@
 //    document.write('멋쟁이 사자 : ' + j++ + '<br/>');
 //}
 
-for (var i = 1; i <= 100; i++) {
-    if (i == 20) {
-        break;
-    }
-    document.write(i + '<br/>');
+//for (var i = 1; i <= 100; i++) {
+//    if (i == 20) {
+//        break;
+//    }
+//    document.write(i + '<br/>');
+//}
+//
+//document.write('<br/>');
+//
+//for (var i = 1; i <= 100; i++) {
+//    if (i == 20) {
+//        continue;
+//    }
+//    document.write(i + '<br/>');
+//}
+
+// 함수
+// 매개변수가 없는 함수 생성하기
+function message() {
+    document.write('Hello, I am a function without parameter' + '<br/>');
 }
 
-document.write('<br/>');
-
-for (var i = 1; i <= 100; i++) {
-    if (i == 20) {
-        continue;
-    }
-    document.write(i + '<br/>');
+// 한 개의 매개변수를 갖는 함수 생성하기
+function welcomeMessage(name) {
+    document.write('welcome ' + name + '<br/>');
 }
+
+// 여러 개의 매개변수를 갖는 함수 생성하기
+function addition(num1, num2) {
+    var sum = num1 + num2;
+    document.write('addition is ' + sum + '<br/>');
+}
+
+// 값을 반환하는 함수
+function square(num) {
+    return num * num;
+}
+
+message();
+welcomeMessage('임정택');
+addition(2, 3);
+document.write('square 5 is : ' + square(5) + '<br/>');
