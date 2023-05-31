@@ -175,40 +175,55 @@
 //} else {
 //    console.log('Consonant');
 //}
+//
+//var digit = parseInt(prompt('Enter a digit: '));
+//
+//switch(digit) {
+//    case 0:
+//        document.write('Zero');
+//        break;
+//    case 1:
+//        document.write('One');
+//        break;
+//    case 2:
+//        document.write('Two');
+//        break;
+//    case 3:
+//        document.write('Three');
+//        break;
+//    case 4:
+//        document.write('Four');
+//        break;
+//    case 5:
+//        document.write('Five');
+//        break;
+//    case 6:
+//        document.write('Six');
+//        break;
+//    case 7:
+//        document.write('Seven');
+//        break;
+//    case 8:
+//        document.write('Eight');
+//        break;
+//    case 9:
+//        document.write('Nine');
+//        break;
+//    default:
+//        document.write('Not a digit');
+//}
 
-var digit = parseInt(prompt('Enter a digit: '));
+var i = 1;
 
-switch(digit) {
-    case 0:
-        document.write('Zero');
-        break;
-    case 1:
-        document.write('One');
-        break;
-    case 2:
-        document.write('Two');
-        break;
-    case 3:
-        document.write('Three');
-        break;
-    case 4:
-        document.write('Four');
-        break;
-    case 5:
-        document.write('Five');
-        break;
-    case 6:
-        document.write('Six');
-        break;
-    case 7:
-        document.write('Seven');
-        break;
-    case 8:
-        document.write('Eight');
-        break;
-    case 9:
-        document.write('Nine');
-        break;
-    default:
-        document.write('Not a digit');
+do {
+    document.write('멋쟁이 사자 : ' + i + '<br/>');
+    i++;
+} while (i < 1)
+
+document.write('<br/>');
+
+var j = 1;
+
+while (j < 1) {
+    document.write('멋쟁이 사자 : ' + j++ + '<br/>');
 }
