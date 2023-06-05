@@ -1,12 +1,10 @@
-print('Like', 'Share', 'Subscribe', sep='')
-print('Like', 'Share', 'Subscribe', sep='***')
+# name = input('Your name :')
+# mobile = input('Enter your mobile number :')
+# mb = int(mobile)
+# print(mb, type(mb))
+#
+# price = int(input('Total Price :'))
+# print(price)
 
-print('Like', 'Share', 'Subscribe', sep='***', end='\t')
-print('Like', 'Share', 'Subscribe', sep='***', end='\n')
-
-m = 40
-print('value =', m)
-
-name = '임정택'
-age = 26
-print('My name is', name, 'and My age is', age, sep=' ', end='.\n')
+print("He said, \"Hello world\"")
+print('It\'s beautiful day.')
