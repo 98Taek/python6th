@@ -1,23 +1,12 @@
-# 명시적 타입 변환
+print('Like', 'Share', 'Subscribe', sep='')
+print('Like', 'Share', 'Subscribe', sep='***')
 
-a = 5
-b = 2
-value = a / b
-print(type(value))
-int_value = int(value)
-print(int_value, type(int_value))
+print('Like', 'Share', 'Subscribe', sep='***', end='\t')
+print('Like', 'Share', 'Subscribe', sep='***', end='\n')
 
-q = 20
-u = '10'
-r = q + int(u)
-print(r, type(r))
-r = str(q) + u
-print(r, type(r))
+m = 40
+print('value =', m)
 
-n1 = 10.76
-vn1 = int(n1)
-print(vn1, type(vn1))
-
-n5 = '멋쟁이 사자'
-vn5 = tuple(n5)
-print(vn5, type(vn5))
+name = '임정택'
+age = 26
+print('My name is', name, 'and My age is', age, sep=' ', end='.\n')
