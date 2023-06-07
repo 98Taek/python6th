@@ -1,31 +1,36 @@
-print('인자가 없는 함수')
-def disp():
-    name = '멋쟁이사자'
-    print('Welcome to', name)
-
-print('함수 실행')
-disp()
-disp()
-disp()
-
 def add():
     x = 10
     y = 20
     c = x + y
-    print(c)
+    return c
 
-add()
+
+sum1 = add()
+print(sum1)
+
+def add():
+    x = 10
+    y = 40
+    return x + y
+
+
+sum2 = add()
+print(sum2)
+
+def add(y):
+    x = 10
+    return x + y
+
+
+sum3 = add(10)
+print(sum3)
 
 def add(y):
     x = 10
     c = x + y
-    print(c)
+    d = y - x
+    return c, d, 50
 
-add(30)
 
-def add(y):
-    x = 10.2334
-    print(x + y)
-    print(f'Formatted Output {x + y:.2f}')
-
-add(20)
+sum4, sub1, a = add(20)
+print(sum4, sub1, a)
