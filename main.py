@@ -1,11 +1,17 @@
-def disp(sh):
-    print('Disp Function')
-    return sh
+def pw(x, y):
+    z = x ** y
+    print(z)
 
 
-def show():
-    return 'Show Function'
+pw(2, 5)
 
 
-r_sh = disp(show)
-print(r_sh())
+def show(name, age=27):
+    print(f'Name: {name} Age: {age}')
+
+
+show('멋쟁이사자', 26)
+show(age=26, name='멋쟁이사자')
+show(name='멋쟁이사자')
+
+
