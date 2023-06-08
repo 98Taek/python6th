@@ -1,14 +1,20 @@
-def add(**num):
-    z = num['a'] + num['b'] + num['c']
-    print('Addition:', z)
+a = 50
 
 
-add(a=5, b=2, c=4, d=5)
+def show():
+    x = 10
+    print(x)
+    print(a)
 
 
-def add(x, **num):
-    z = x + num['a'] + num['b'] + num['c']
-    print('Addition:', z)
+show()
+
+i = 0
 
 
-add(3, a=5, b=2, c=4, d=5)
+def myfun():
+    a = i + 1
+    print('My Function:', a)
+
+myfun()
+print('Global Variable:', a)
