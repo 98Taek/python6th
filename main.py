@@ -1,15 +1,17 @@
-import sys
+show = lambda x: print(x)
 
-sys.setrecursionlimit(3000)
+show(5)
 
-i = 0
+add = lambda x, y: (x + y)
 
+print(add(3, 7))
 
-def myfun():
-    global i
-    i += 1
-    print('My Function:', i)
-    myfun()
+add_sub = lambda x, y: (x + y, x - y)
+a, s = add_sub(5, 2)
 
+print(a)
+print(s)
 
-myfun()
+add = lambda x, y=3: (x + y)
+
+print(add(5))
