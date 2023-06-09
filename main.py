@@ -1,21 +1,15 @@
-class Vector:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+from datetime import datetime
+from datetime import date
 
-    def __add__(self, other):
-        return Vector(self.x + other.x, self.y + other.y)
+dt = datetime(year=2023, month=6, day=9, hour=10, minute=37)
+print(dt)
+print(type(dt))
 
-    def __str__(self):
-        return f'Vector({self.x}, {self.y})'
+current_datetime = datetime.now()
+print(current_datetime)
 
+d = date(year=2023, month=6, day=9)
+print(d)
 
-a = Vector(1, 2)
-b = Vector(1, 2)
-
-print(a)
-print(b)
-
-c = a + b
-
-print(c)
+current_day = date.today()
+print(current_day)
