@@ -1,36 +1,18 @@
-class ParentClass:
-    def __init__(self):
-        self.name = 'parent'
-        self.number = 10
+from datetime import timedelta
+from datetime import date
+from datetime import datetime
 
-    def __str__(self):
-        return f'ParentClass name : {self.name}, number : {self.number}'
+td = timedelta(days=10)
+print(td)
 
-    def add_num(self, new_number):
-        print('부모 :', new_number, '만큼 더해야지')
-        self.number += new_number
+d1 = date(year=2023, month=5, day=5)
+d2 = date(year=2023, month=6, day=9)
 
+print(d1 == d2)
+print(d1 > d2)
+print(d1 < d2)
 
-class ChildClass (ParentClass):
-    def __init__(self):
-        super().__init__()
-        self.name = 'child'
+dt = datetime.today()
 
-    def __str__(self):
-        return f'ChildClass name : {self.name}, number : {self.number}'
-
-    def add_num(self, new_number):
-        print('말 안듣는 자식: 고정적으로 5 더할건데?')
-        self.number += 5
-
-
-parent = ParentClass()
-child = ChildClass()
-print(parent)
-print(child)
-print()
-print('Plus 7')
-parent.add_num(7)
-child.add_num(7)
-print(parent)
-print(child)
+formatted_datetime = dt.strftime('%B, %d, %y')
+print(formatted_datetime)
