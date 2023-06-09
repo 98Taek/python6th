@@ -1,17 +1,24 @@
-from array import *
+class Mobile:
+    fp = 'yes'
 
 
-def show(ar):
-    print('Passed Array ar:', ar)
-    print(type(ar))
-    for i in ar:
-        print(i)
-    return ar
+realme = Mobile()
+redme = Mobile()
+geek = Mobile()
 
+print(Mobile.fp)
+print(realme.fp)
+print(redme.fp)
+print(geek.fp)
 
-print()
-a = array('i', [101, 102, 103, 104])
-y = show(a)
-print('Return Array Y:', y)
-for i in y:
-    print(i)
+Mobile.fp = 'no'
+print(Mobile.fp)
+print(realme.fp)
+print(redme.fp)
+print(geek.fp)
+
+realme.fp = 'Not Working'
+print(Mobile.fp)
+print(realme.fp)
+print(redme.fp)
+print(geek.fp)
