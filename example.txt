@@ -1,3 +1,3 @@
 Hello, World
-Welcom to Python
+Welcome to Python
 Have a great day
