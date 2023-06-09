@@ -1,18 +1,26 @@
 import os
 
-filename = 'example.txt'
+current_directory = os.getcwd()
+print(current_directory)
 
-print('파일이 존재하는지 확인')
-if os.path.isfile(filename):
-    print(f'{filename}이 존재합니다.')
-else:
-    print(f'{filename}이 없습니다.')
+# os.mkdir('new_directory')
 
-file_object = open('list_example.txt', 'w')
+# os.makedirs('parent_directory/child_directory/grandchild_directory')
 
-content_list = ["Python", 'Java', 'C++', 'JavaScript']
+# os.chdir('new_directory')
+# current_directory2 = os.getcwd()
+# print(current_directory2)
+#
+# with open('example.txt', 'w') as file_object:
+#     file_object.write('Hello World')
 
-for item in content_list:
-    file_object.write(item + '\n')
+# os.rename('new_directory', 'old_directory')
 
-file_object.close()
+# os.rmdir('old_directory')
+
+# os.removedirs('parent_directory/child_directory/grandchild_directory')
+
+for dirpath, dirnames, filenames in os.walk('parent_directory'):
+    print(f'디렉터리 경로: {dirpath}')
+    print(f'디렉터리 이름: {dirnames}')
+    print(f'파일 이름: {filenames}')
