@@ -1,14 +1,9 @@
-try:
-    result = 10 / 0
-except ZeroDivisionError:
-    print("Error")
+class CustomException(Exception):
+    def __init__(self, message):
+        self.message = message
 
-print('Program continues')
 
 try:
-    number = int("Not a number")
-    number2 = 5 + 'Not a number'
-except ValueError:
-    print("Error: ValueError")
-except TypeError:
-    print("Error: TypeError")
+    raise CustomException("This a custom exception.")
+except CustomException as e:
+    print(f"Error: {e.message}")
