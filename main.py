@@ -1,18 +1,21 @@
-class Vehicle:
+class Engine:
+    def start(self):
+        return "Engine started"
 
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-
-    def start_engine(self):
-        return "The engine is running!"
+    def stop(self):
+        return "Engine stopped"
 
 
-class Car(Vehicle):
-    def start_engine(self):
-        return super().start_engine() + " It's a car engine."
+class Wheels:
+    def retate(self):
+        return "Wheels are rotating"
 
 
-my_car = Car("Kia", "K7", 2023)
-print(my_car.start_engine())
+class Car(Engine, Wheels):
+    pass
+
+
+my_car = Car()
+
+print(my_car.start())
+print(my_car.stop())
