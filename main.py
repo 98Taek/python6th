@@ -1,20 +1,18 @@
-class Car:
-    wheels = 4
+class Vehicle:
 
-    def __init__(self, make, model, color):
+    def __init__(self, make, model, year):
         self.make = make
         self.model = model
-        self.color = color
+        self.year = year
 
-    # Method
-    def drive(self):
-        return "The car is moving."
-
-    def stop(self):
-        return f"The car {self.model} has stopped."
+    def start_engine(self):
+        return "The engine is running!"
 
 
-my_car = Car("Kia", "Morning", "Blue")
-print(my_car.make)
-print(my_car.drive())
-print(my_car.stop())
+class Car(Vehicle):
+    def start_engine(self):
+        return super().start_engine() + " It's a car engine."
+
+
+my_car = Car("Kia", "K7", 2023)
+print(my_car.start_engine())
