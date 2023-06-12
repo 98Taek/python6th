@@ -1,21 +1,4 @@
-class Engine:
-    def start(self):
-        return "Engine started"
+from MyApp.Handlers.text_handler import handle_text
 
-    def stop(self):
-        return "Engine stopped"
-
-
-class Wheels:
-    def retate(self):
-        return "Wheels are rotating"
-
-
-class Car(Engine, Wheels):
-    pass
-
-
-my_car = Car()
-
-print(my_car.start())
-print(my_car.stop())
+input_text = "python package practice"
+handle_text(input_text)
