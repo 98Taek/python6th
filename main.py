@@ -1,4 +1,14 @@
-from MyApp.Handlers.text_handler import handle_text
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Error")
 
-input_text = "python package practice"
-handle_text(input_text)
+print('Program continues')
+
+try:
+    number = int("Not a number")
+    number2 = 5 + 'Not a number'
+except ValueError:
+    print("Error: ValueError")
+except TypeError:
+    print("Error: TypeError")
