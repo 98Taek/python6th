@@ -1,4 +1,7 @@
 <!--views.py > index > context > latest_question_list -->
+{% extends "base_polls.html" %}
+
+{% block content %}
 {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
@@ -10,3 +13,4 @@
 {% else %}
     <q>투표가 없습니다.</q>
 {% endif %}
+{% endblock content %}
